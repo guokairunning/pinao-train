@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title></title>
+   <link rel="stylesheet" href="css/index.css" type="text/css">
+   <style type="text/css">
+	ul,li{
+		margin:0px;
+		padding: 0px;
+		list-style: none;
+		
+	}
+      #message_con{
+           width:800px;
+           height:200px;
+           border: 1px solid #ccc;
+           resize: none;
+           margin-top: 20px;
+          background-color: #97CAF7;
+      }
+      .btn{
+      	width:800px;
+      	height: 100px;
+        margin-top: 10px;
+        
+      }
+      .btn input{
+                 width: 100px;
+                 height: 40px;
+                 font-size: 16px;
+                 border-radius: 10px;
+                 background-color: #F2CBC9;
+                }
+      
+     
+	</style>
+   
+</head>
+<body style="background-image: url(img/cloud_bg.jpg);">
+     <div id="message_top">  <!--将logo和NAV装入这个盒子中-->
+	     	 <div id="logo">          <!--大图展示logo-->
+			         <div class="load"><a href="#">会员</a></div>
+			        
+			         <div class="load" id="loadss"><a href="loda_in.html">登录/注册</a></div>
+	        </div>
+		     <div id="nav">           <!--导航条淡入淡出显示-->
+		         <ul>
+		             <li class="choice"><a href="index.html">首页</a></li>
+
+		             <li class="mini" id="one"><a href="#">乐理课堂</a>
+		                <ul class="second" >
+		                   <li id="special"><a href="#">曲谱</a></li>
+		                   <li class="mini"><a href="#">教学视频</a></li>
+		                </ul>
+		             </li>
+
+		             <li class="choice" id="two"><a href="慢生活.html">课程分区</a>
+		                 <ul class="seconds">
+		                     <li class="mini"><a href="慢生活.html">儿童</a></li>
+		                     <li class="choice"><a href="慢生活.html">青少年</a></li>
+		                     <li class="mini"><a href="慢生活.html">成年</a></li>
+		                 </ul>
+		             </li>
+
+		             <li class="mini"><a href="message.html">留言板</a></li>
+		             <li class="choice"><a href="#">东方论坛</a></li>
+		             <li class="mini"><a href="about.html">关于我们</a></li>
+		         </ul>
+		     </div>
+     </div>
+     <div class="message_bg">
+           <div id="message_body"><!--留言板的主体-->
+                  <form action="#" method=''>
+                	      <textarea id="message_con" ></textarea> 
+                    	      <div class="btn">
+                    	      	<input type="submit" value="提交" id='sub'/>
+                    	        <input type="reset" value="取消" id="reset" />
+                    	      </div>
+            	      
+                  </form>
+                  <ul id='message_list' style="margin-top:50px; ">
+                  
+                  </ul>
+          </div>
+    </div>
+     <script language="JavaScript" type="text/javascript"
+            src="js/jquery-1.12.1.min.js">
+    </script>
+    <script language="JavaScript" type="text/javascript"
+            src="js/index.js">
+    </script>
+    <script type="text/javascript">
+     
+     		 
+     		$('#sub').click(function(){
+     			var Str=$('#message_con').val();
+     			var oDate=new Date;
+     		    var oHour=oDate.getHours();
+     		    var oMinute=oDate.getMinutes();
+     		    var oSeconds=oDate.getSeconds();
+                 var oTime=oHour+':'+oMinute+':'+oSeconds;
+     			$('#message_list').prepend('<li>'+Str+'<p>'+oTime+'</p>'+'</li>')
+
+     	             $('ul#message_list li').css({
+     					'width':'680px',
+      	                'min-height':'80px',
+                        'background-color': 'wheat',
+                        'display':'block',
+                        'padding':'10px',
+                        'margin':'10px auto'
+                        
+     			})
+     			 $('ul#message_list li p').css({
+     			 	'text-align':'right',
+     			 	'margin-top':'10px'
+     			 	
+     			 })
+     			
+     		})
+
+     	
+     </script>
+</body>
+</html>

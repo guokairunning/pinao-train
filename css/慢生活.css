@@ -1,0 +1,160 @@
+body{
+	font: 12px "宋体",Arial,Helvetica,sans-serif;
+}
+div,ul,li{
+	border: 0px;
+	margin: 0px;
+	padding:0px;
+}
+.photo{
+	float: left;
+}
+.photo_biaoti{
+	float: left;
+}
+.photo:hover{
+	-webkit-transform:scale(1.1);
+	-moz-transform:(1.1);
+	-o-transform:(1.1);
+	-ms-transform:scale(1.1);
+	transform:scale(1.1);
+	border-radius: 10px 10px 10px 10px;
+}
+.description{
+	margin-left:400px;
+	line-height: 130px;
+	font-size: 30px;
+}
+.pink{
+	color: #FE5187;
+}
+.recommend{
+	width: 397px;
+	height: 222px;
+	float: left;
+	margin: 14px;
+}
+.recommend p{
+	display: block;
+	font-size: 17px;
+	margin-top: 20px;
+	line-height: 22px;
+	text-indent: 1em;
+}
+.text{
+	width: 160px;
+	height: 220px;
+	float: right;
+}
+#fengexian{
+	width: 1280px;
+	height: 15px;
+	margin: 0 auto;
+	background:url(images/斜杠.jpg) ;
+}
+/***********************************header************************************************/
+#header{
+	width: 1100px;
+	height:80px;
+	margin: 0 auto;
+}
+#logo{	
+	width:150px;
+	height:80px;
+	margin-left: 43px;
+	float: left;
+}
+#nav{
+	width: 900px;
+	height:80px;
+	float: right;
+	line-height:80px;
+}
+#nav ul{
+	list-style-type: none;
+	overflow:hidden;
+	padding-right: 50px;
+}
+#nav li{
+	float: right;
+}
+#nav a{
+	width: 120px;
+	display: block;
+	font-weight:400;
+	font-size: 22px;
+	text-align:center;
+	text-decoration:none;
+	border-radius: 20px;
+}
+#nav a:link{
+	color:#000000;
+	background-color:#FFFFFF;
+}
+#nav a:visited{
+	color:#000000;
+}
+#nav a:active{
+	background-color:#D3D3D3;
+}
+#nav a:hover{
+	background-color:#D3D3D3;	
+}
+/***********************************music************************************************/
+#music{
+	width: 1280px;
+	height: 660px;
+	margin:0 auto;
+
+}
+#music_top{
+	width: 1280px;
+	height: 120px;
+}
+#music_bottom{
+	width: 1280px;
+	height: 500px;
+	background-color: #F1F0EE;
+}
+/***********************************article************************************************/
+#article{
+	width: 1280px;
+	height: 660px;
+	margin:0 auto;
+}
+#article_top{
+	width: 1280px;
+	height: 120px;
+}
+#article_bottom{
+	width: 1280px;
+	height: 500px;
+	background-color: #F1F0EE;	
+}
+/***********************************movie************************************************/
+#movie{
+	width: 1280px;
+	height: 660px;
+	margin:0 auto;
+}
+#movie_top{
+	width: 1280px;
+	height: 120px;
+}
+#movie_bottom{
+	width: 1280px;
+	height: 500px;
+	background-color: #F1F0EE;
+}
+/***********************************copyright************************************************/
+#copyright{
+	width: 1280px;
+	height: 30px;
+	margin:0 auto;
+}
+#copyright p{
+	display: inline;
+	float: right;
+	font-size: 20px;
+	line-height: 30px;	
+}
